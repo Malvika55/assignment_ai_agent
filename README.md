@@ -2,8 +2,6 @@
 
 This project builds a small, reliable customer-support agent for Aster & Row using the supplied knowledge base and mock order dataset. The agent prioritizes grounded answers, source references, safe abstention, and privacy-aware order lookups.
 
-![Demo GIF](assets/demo.gif)
-
 ## Architecture
 
 - Knowledge layer: Markdown files in `knowledge-base` with YAML front matter
@@ -146,6 +144,60 @@ One AI-generated suggestion that was wrong or incomplete: it initially recommend
 - No customer credentials, API keys, or personal data were added to the repo.
 - The project deliberately avoids hidden prompt execution by treating retrieved content and tool outputs as untrusted data.
 - The CLI logs a simple debug trace for the current message, conversation history, relevant passages, tool calls, and final response.
+
+## Web frontend (interactive demo)
+
+A small Flask-based UI is included to demonstrate multi-turn flows, order lookups, and the debug trace.
+
+Run the frontend locally after activating your virtualenv:
+
+On Windows PowerShell (from the repo root):
+
+```powershell
+$env:PYTHONPATH = "C:\path\to\assignment_ai_agent"
+.\venv\Scripts\python.exe -m app.frontend
+```
+
+On macOS/Linux (from the repo root):
+
+```bash
+export PYTHONPATH="$(pwd)"
+python -m app.frontend
+```
+
+Then open http://127.0.0.1:5000 in your browser. The UI shows conversation history, the agent's last answer and sources, and a toggleable debug log pane. Use an example order ID like `ORD-1007` to try the order lookup flow.
+
+## Demo recording and uploading
+
+A short animated GIF is included at `assets/demo.gif` showing the UI and an example conversation. To add your own recording (MP4/GIF):
+
+- Record using your preferred tool (Windows Game Bar, QuickTime, or `ffmpeg`). Example `ffmpeg` commands:
+
+```bash
+# Record a 20s region (x,y,width,height) to MP4
+ffmpeg -f gdigrab -framerate 30 -offset_x 100 -offset_y 100 -video_size 1280x720 -i desktop -t 20 demo.mp4
+
+# Convert to GIF (smaller size, tweak -r and -vf as needed)
+ffmpeg -i demo.mp4 -vf "fps=15,scale=720:-1:flags=lanczos" -loop 0 assets/demo.gif
+```
+
+- Add the recording to the repository and push (from project root):
+
+```powershell
+git add assets/demo.gif   # or assets/demo.mp4
+git commit -m "Add demo recording"
+git push
+```
+
+Alternatively, attach the video to a GitHub release or to the project README by referencing the uploaded asset.
+
+## Where to look in the code
+
+- `app/front end.py` — Flask app and API endpoints.
+- `app/agent.py` — agent logic, retrieval and response composition.
+- `app/order_tool.py` — order lookup tool with privacy filtering.
+- `app/evaluation.py` — deterministic evaluation harness and visible cases.
+
 
 ## License
 
