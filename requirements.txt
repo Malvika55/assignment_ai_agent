@@ -1,0 +1,8 @@
+openai
+python-dotenv
+faiss-cpu
+numpy
+pytest
+pyyaml
+pillow
+flask
