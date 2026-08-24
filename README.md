@@ -169,29 +169,13 @@ Then open http://127.0.0.1:5000 in your browser. The UI shows conversation histo
 
 ## Demo recording and uploading
 
-A short animated GIF is included at `assets/demo.gif` showing the UI and an example conversation. To add your own recording (MP4/GIF):
+A short demo recording is included to showcase the application's UI and a sample conversation flow.
 
-- Record using your preferred tool (Windows Game Bar, QuickTime, or `ffmpeg`). Example `ffmpeg` commands:
-
-```bash
-# Record a 20s region (x,y,width,height) to MP4
-ffmpeg -f gdigrab -framerate 30 -offset_x 100 -offset_y 100 -video_size 1280x720 -i desktop -t 20 demo.mp4
-
-# Convert to GIF (smaller size, tweak -r and -vf as needed)
-ffmpeg -i demo.mp4 -vf "fps=15,scale=720:-1:flags=lanczos" -loop 0 assets/demo.gif
-```
-
-- Add the recording to the repository and push (from project root):
-
-```powershell
-git add assets/demo.gif   # or assets/demo.mp4
-git commit -m "Add demo recording"
-git push
-```
 <img width="1860" height="832" alt="Image" src="https://github.com/user-attachments/assets/1aed6756-8aea-4f55-96a9-48094103c50d" />
 
 https://github.com/user-attachments/assets/b858f202-7f09-4de9-8037-d5dbf7d3851a
 
+The demo highlights the main features and demonstrates how the application works through a real user interaction.
 
 
 ## Where to look in the code
