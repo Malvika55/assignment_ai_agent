@@ -169,18 +169,19 @@ Then open http://127.0.0.1:5000 in your browser. The UI shows conversation histo
 
 ## Demo recording and uploading
 
-A short demo recording is included to showcase the application's UI and a sample conversation flow.
+A 2–4 minute demo demonstrating the main functionality of the AI support agent.
+[▶️ Watch the Demo Video](https://github.com/user-attachments/assets/b858f202-7f09-4de9-8037-d5dbf7d3851a)
 
 <img width="1860" height="832" alt="Image" src="https://github.com/user-attachments/assets/1aed6756-8aea-4f55-96a9-48094103c50d" />
 
-https://github.com/user-attachments/assets/b858f202-7f09-4de9-8037-d5dbf7d3851a
+
 
 The demo highlights the main features and demonstrates how the application works through a real user interaction.
 
 
 ## Where to look in the code
 
-- `app/front end.py` — Flask app and API endpoints.
+- `app/frontend.py` — Flask app and API endpoints.
 - `app/agent.py` — agent logic, retrieval and response composition.
 - `app/order_tool.py` — order lookup tool with privacy filtering.
 - `app/evaluation.py` — deterministic evaluation harness and visible cases.
