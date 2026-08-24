@@ -174,6 +174,7 @@ A 2–4 minute demo demonstrating the main functionality of the AI support agent
 
 [▶️ Watch Demo 2](https://github.com/user-attachments/assets/60c58f2d-2d47-4d58-8850-2920774a0d2f)
 
+
 <img width="1860" height="832" alt="Image" src="https://github.com/user-attachments/assets/1aed6756-8aea-4f55-96a9-48094103c50d" />
 
 The demo highlights the main features and demonstrates how the application works through a real user interaction.
