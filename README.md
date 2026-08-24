@@ -170,7 +170,7 @@ Then open http://127.0.0.1:5000 in your browser. The UI shows conversation histo
 ## Demo recording and uploading
 
 A 2–4 minute demo demonstrating the main functionality of the AI support agent.
-[▶️ Watch the Demo Video 1](https://github.com/user-attachments/assets/b858f202-7f09-4de9-8037-d5dbf7d3851a)
+[▶️ Watch Demo 1](https://github.com/user-attachments/assets/b858f202-7f09-4de9-8037-d5dbf7d3851a)
 
 [▶️ Watch Demo 2](https://github.com/user-attachments/assets/60c58f2d-2d47-4d58-8850-2920774a0d2f)
 
