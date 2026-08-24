@@ -190,7 +190,9 @@ git push
 ```
 <img width="1860" height="832" alt="Image" src="https://github.com/user-attachments/assets/1aed6756-8aea-4f55-96a9-48094103c50d" />
 
-Alternatively, attach the video to a GitHub release or to the project README by referencing the uploaded asset.
+https://github.com/user-attachments/assets/b858f202-7f09-4de9-8037-d5dbf7d3851a
+
+
 
 ## Where to look in the code
 
